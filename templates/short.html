@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!-- https://github.com/msfpt/UrlShorter -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MsfPt :: UrlShorter</title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+      <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon">
+      <noscript>
+        <style>#copy{display: none;}</style>
+      </noscript>
+      <noframes>
+        <meta http-equiv="refresh" content="0; url=https://github.com/msfpt/UrlShorter">
+      </noframes>
+  </head>
+  <body translate="no">
+    <section>
+      <a href="{{data.short_url}}" id="link" class="link" target="_blank" rel="link" title="open url">
+        <span>{{data.short_url}}</span>
+      </a>
+      <button class="btn" id="copy">Copy</button>
+    </section>
+    
+    <script type="text/javascript" charset="utf-8">
+      var btn = document.querySelector('#copy');
+      var link = document.querySelector('#link').href;
+      const copyToClipboard = (text) => { navigator.clipboard.writeText(text); }
+      btn.addEventListener('click', () => {
+        copyToClipboard(link);
+        alert('Copyed : '+link);
+      });
+
+    </script>
+    <script async="true" src="https://msfpt.github.io/GitHubStar/github-star.js" status="GitHubStar" user="msfpt" repository="UrlShorter"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!-- https://github.com/msfpt/UrlShorter -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MsfPt :: UrlShorter</title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+      <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon">
+      <noframes>
+        <meta http-equiv="refresh" content="0; url=https://github.com/msfpt/UrlShorter">
+      </noframes>
+  </head>
+  <body translate="no">
+    <form action="/short" method="post">
+      <input type="url" name="url" placeholder="https://google.com" spellcheck="false" required />
+      <input type="submit" class="btn" value="Next">
+    </form>
+  
+    <script async="true" src="https://msfpt.github.io/GitHubStar/github-star.js" status="GitHubStar" user="msfpt" repository="UrlShorter"></script>
+  </body>
+</html>

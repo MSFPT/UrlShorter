@@ -1,0 +1,115 @@
+/*
+ * https://github.com/msfpt/UrlShorter
+ */
+
+@font-face {
+  font-family: 'poppins';
+  src: url('../font/Poppins-Light.ttf');
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-zoom: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #222;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  line-height: 1.4;
+}
+
+body *{
+  border-radius: 2pt;
+}
+
+body form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+body form [type="url"]{
+  outline: none;
+  width: 80vw;
+  max-width: 72rem;
+  height: 3rem;
+  font-size: 16pt;
+  padding: 2pt 7pt;
+  margin: 7pt 1rem;
+  font-family: 'poppins',sans-serif !important;
+
+}
+
+.btn {
+  background-color: #efefef;
+  margin: calc( 1rem + 1vw ) ;
+  padding: 3.4pt 11.6pt;
+  font-size: 17pt;
+  font-family: 'poppins',sans-serif !important;
+
+}
+
+.btn:hover{
+  background-color: #e8e6e6;
+}
+
+.btn:active{
+  background-color: #d7d5d5;
+}
+
+#error {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#error *{
+  font-family: 'poppins', sans-serif;
+  color: #efefef;
+  margin: 2rem auto;
+}
+
+#error h1{
+  font-size: 90pt;
+}
+
+#error h2{
+  font-size: 37pt;
+}
+
+.link {
+  margin: auto 1rem;
+  font-family: 'poppins', sans-serif;
+  font-size: 14pt;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: transparent;
+  color: #a2d4d0;
+  box-shadow: 0 0 2px #c9c9c9, inset 0 0 3pt .2pt #c9c9c9;
+  border-radius: 2pt;
+  display: inline-block;
+  padding: 13px 25px 10px;
+  font-weight: 700;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.link:hover {
+  color: #95CD41;
+  box-shadow: 0 0 2px #95CD41, inset 0 0 3pt .2pt #95CD41;
+}
