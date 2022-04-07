@@ -3,7 +3,13 @@
 [![Python](https://img.shields.io/badge/python-3.9-blue)](https://python.org)
 ![Level](https://img.shields.io/badge/Level-Easy-cyan)
 
+<center>
+
+![demo](https://raw.githubusercontent.com/MSFPT/UrlShorter/main/demo.jpg)
+
 Url shortener with Python
+
+</center>
 
 ## Clone from GitHub
 ```bash
