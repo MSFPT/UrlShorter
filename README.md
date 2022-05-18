@@ -1,7 +1,7 @@
 # UrlShorter
 
-[![Python](https://img.shields.io/badge/python-3.9-blue)](https://python.org)
-![Level](https://img.shields.io/badge/Level-Easy-cyan)
+<!-- [![Python](https://img.shields.io/badge/python-3.9-blue)](https://python.org)
+![Level](https://img.shields.io/badge/Level-Easy-cyan) -->
 
 <center>
 
