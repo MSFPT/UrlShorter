@@ -40,9 +40,9 @@ def shorter():
 @app.errorhandler(404)
 def page_not_found(e): return render_template('error.html', data={'message': 'Page Not Found'}), 404
 
-@app.route("/<lid>")
+@app.route("/<int:lid>")
 def redirect_to_url(lid):
   try: return redirect(database[lid])
   except: return render_template("error.html", data={'message':'Something is wrong!'})
 
-app.run() if __name__=='__main__' else quit()
+app.run() if __name__=='__main__' else quit("\r\n  [!] run `python3 UrlShorter.py` command. \n")
